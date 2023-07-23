@@ -244,7 +244,7 @@ body {
 @media (max-width: 1600px) {
   .main__img img {
     position: absolute;
-    left: -147px;
+    left: -9%;
     top: 0;
     bottom: 0;
     width: 109%;
@@ -267,6 +267,12 @@ body {
     position: absolute;
     top: 267px;
     right: 24px;
+  }
+  .main__img {
+    width: 200%;
+  }
+  .main__img img {
+    left: -43%;
   }
 }
 @media (max-width: 700px) {
@@ -299,6 +305,14 @@ body {
     width: 79px;
     height: 32px;
     font-size: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .main__img {
+    height: 425px;
+  }
+  .main__img img {
+    left: -55%;
   }
 }
 .main {

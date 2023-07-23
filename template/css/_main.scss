@@ -200,7 +200,7 @@
         &__img {
             img {
                 position: absolute;
-                left: -147px;
+                left: -9%;
                 top: 0;
                 bottom: 0;
                 width: 109%;
@@ -228,6 +228,14 @@
             position: absolute;
             top: 267px;
             right: 24px;
+        }
+
+        &__img {
+            width: 200%;
+
+            img {
+                left: -43%;
+            }
         }
     }
 }
@@ -267,6 +275,18 @@
                 width: 79px;
                 height: 32px;
                 font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) { 
+    .main {
+        &__img {
+            height: 425px;
+
+            img {
+                left: -55%;
             }
         }
     }
