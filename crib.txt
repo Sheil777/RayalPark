@@ -83,3 +83,37 @@
 <meta http-equiv="pragma" content="no-cache" />
 <meta http-equiv="expires" content="0" />
 <link rel="stylesheet" href="template/css/style.css?v=123">
+
+
+
+
+
+/* Фоновая картинка */
+<section class="main">
+    <div class="main__img">
+        <img src="./template/img/main.jpg" alt="Cozy room">
+    </div>
+    <div class="main__container">
+    </div>
+</section>
+
+.main {
+    height: 690px;
+
+    &__img {
+        height: inherit;
+        position: relative;
+        z-index: -1;
+        width: 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

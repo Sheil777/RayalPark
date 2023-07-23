@@ -1,6 +1,11 @@
 /* Header */
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -120,6 +125,147 @@
         margin-top: 0;
         img {
             width: 100px;
+        }
+    }
+}
+
+/* Main */
+
+.main {
+    height: 690px;
+
+    &__img {
+        height: inherit;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__container {
+        padding-top: 214px;
+    }
+
+    &__text {
+        width: 500px;
+        margin-top: 15px;
+        
+        color: #081F32;
+        font-family: Gelasio;
+        font-size: 57px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+
+        &_blue {
+            color: #1B75BB;
+        }
+    }
+
+    &__about {
+        width: 350px;
+        margin-top: 25px;
+
+        color: #081F32;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        opacity: 0.6000000238418579;
+    }
+
+    &__button {
+        margin-top: 30px;
+        width: 138px;
+        height: 56px;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .main {
+    
+        &__img {
+            img {
+                position: absolute;
+                left: -147px;
+                top: 0;
+                bottom: 0;
+                width: 109%;
+                height: 109%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 760px) { 
+    .main {
+        &__container {
+            padding-top: 212px;
+            padding-left: 77px;
+        }
+
+        &__about {
+            margin-top: 0;
+        }
+
+        &__button {
+            position: absolute;
+            top: 267px;
+            right: 24px;
+        }
+    }
+}
+
+@media (max-width: 700px) { 
+    .main__button {
+        top: 300px;
+        right: auto;
+        left: 400px;
+    }
+}
+
+@media (max-width: 550px) { 
+    .main {
+        &__container {
+            padding-top: 94px;
+            padding-left: 28px;
+        }
+
+        &__text {
+            width: 230px;
+            font-size: 24px;
+            margin-top: 6px;
+        }
+
+        &__about {
+            width: 157px;
+            font-size: 11px;
+            opacity: 0.6000000238418579;
+        }
+
+        &__button {
+            top: 132px;
+            left: 232px;
+
+            a {
+                width: 79px;
+                height: 32px;
+                font-size: 10px;
+            }
         }
     }
 }

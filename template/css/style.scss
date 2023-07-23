@@ -26,7 +26,7 @@ body {
     line-height: 1;
     font-size: 16px;
     color: #000;
-    font-family: 'Tinos'; /* , serif; */
+    font-family: 'Gelasio'; /* , serif; */
 }
 
 .wrapper {
@@ -74,6 +74,17 @@ body {
         background: #1B75BB;
         border-radius: 5px;
     }
+}
+
+._text-header {
+    color: #1B75BB;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.800000011920929;
 }
 
 @import 'main';
