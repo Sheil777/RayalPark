@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 
     &__container {
         display: flex;
@@ -40,6 +41,11 @@
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
+            transition: color 0.2s;
+
+            &:hover {
+                color: #1B75BB;
+            }
         }
     }
 }
@@ -1357,6 +1363,16 @@
         font-weight: 500;
         line-height: 150%; /* 24px */
         letter-spacing: 0.48px;
+
+        transition: all 0.5s;
+        box-sizing: border-box;
+
+        &:hover {
+            border: 1px solid #1B75BB;
+            color: #1B75BB;
+            background: white;
+            cursor: pointer;
+        }
     }
 }
 
@@ -1394,7 +1410,6 @@
         }
     }
 }
-
 
 @media (max-width: 380px) {
     .stay {
@@ -1444,6 +1459,9 @@
     &__container {
         display: flex;
         //justify-content: space-between;
+        padding-left: 56px;
+        max-width: 1251px;
+        box-sizing: border-box;
     }
 
     &__contacts {
@@ -1544,6 +1562,7 @@
 .subscribe {
 
     &__header {
+        margin-top: 13px;
         color: #081F32;
         font-family: Poppins;
         font-size: 20px;
@@ -1555,6 +1574,9 @@
 
 .footer__subscribe {
     .stay__form {
+        margin: 0;
+        margin-top: 30px !important;
+
         .stay__input {
             width: 327px;
             height: 54px;
@@ -1565,4 +1587,171 @@
             height: 54px;
         }
     }   
+}
+
+
+@media (max-width: 760px) {
+    .footer {
+        margin-top: 93px;
+        margin-bottom: 50px;
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__contacts {
+            flex: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__logo {
+            width: 365px;
+
+            img {
+                width: 234px;
+            }
+        }
+
+        &__about {
+            width: 365px;
+        }
+
+        &__mail {
+            margin-top: 40px;
+            margin-left: -80px;
+        }
+
+        &__social {
+            margin-top: 38px;
+        }
+    }  
+
+    .footer-social {
+        width: 101%;
+        margin-left: -18px;
+
+        &__item {
+            width: 74px;
+            height: 74px;
+        }
+    }
+
+    .footer-menu {
+        flex: none;
+        margin-top: 40px;
+        padding: 0 90px;
+
+        &__left {
+            gap: 32px;
+        }
+
+        &__right {
+            align-items: end;
+            gap: 32px;
+        }
+    }
+
+    .footer__subscribe {
+        margin-top: 14px;
+        margin-left: -33px;
+
+        .stay__form {
+            margin-top: 13px !important;
+
+            .stay__input {
+                width: 75%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+    .footer-menu {
+        padding: 0;
+        margin: 0 auto;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer {
+        margin-top: 97px;
+
+        &__container {
+            padding: 0;
+        }
+        
+        &__logo {
+            width: 100%;
+            text-align: center;
+            img {
+                margin-left: 16px;
+                width: 173px;
+            }
+        }
+
+        &__about {
+            margin-top: 20px;
+            margin-left: 42px;
+            font-size: 16px;
+            font-weight: 400;
+            width: 248px;
+        }
+
+        &__mail {
+            margin-top: 28px;
+            margin-left: 8px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    .footer-social {
+        width: 86%;
+        margin: 0;
+        margin-top: 67px;
+
+        &__item {
+            height: 35px;
+            width: 35px;
+        }
+    }
+
+    .footer-menu {
+        margin: 0;
+        margin-left: 24px;
+        margin-right: 21px;
+        margin-top: 44px;
+    }
+
+    .footer__subscribe {
+        margin: 0;
+        margin-top: 40px;
+
+        .subscribe__header {
+            margin-left: 23px;
+        }
+
+        .stay__form {
+            .stay__input {
+                margin-left: 5px;
+                width: 173px;
+                height: 47px;
+                font-size: 11px;
+                font-weight: 400;
+
+                &::placeholder {
+                    font-size: 11px;
+                }
+            }
+
+            .stay__button {
+                width: 133px;
+                height: 47px;
+            }
+        }
+    }
 }

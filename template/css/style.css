@@ -70,6 +70,13 @@ body {
   font-weight: 500;
   background: #1B75BB;
   border-radius: 5px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+._button a:hover {
+  background: white;
+  border: 1px solid #1B75BB;
+  color: #1B75BB;
 }
 
 ._text-header {
@@ -89,6 +96,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 .header__container {
   display: flex;
@@ -119,6 +127,10 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  transition: color 0.2s;
+}
+.menu__item a:hover {
+  color: #1B75BB;
 }
 
 @media (max-width: 900px) {
@@ -1156,6 +1168,14 @@ body {
   font-weight: 500;
   line-height: 150%; /* 24px */
   letter-spacing: 0.48px;
+  transition: all 0.5s;
+  box-sizing: border-box;
+}
+.stay__button:hover {
+  border: 1px solid #1B75BB;
+  color: #1B75BB;
+  background: white;
+  cursor: pointer;
 }
 
 @media (max-width: 760px) {
@@ -1225,6 +1245,9 @@ body {
 }
 .footer__container {
   display: flex;
+  padding-left: 56px;
+  max-width: 1251px;
+  box-sizing: border-box;
 }
 .footer__contacts {
   flex: 0 1 334px;
@@ -1306,6 +1329,7 @@ body {
 }
 
 .subscribe__header {
+  margin-top: 13px;
   color: #081F32;
   font-family: Poppins;
   font-size: 20px;
@@ -1314,6 +1338,10 @@ body {
   line-height: 150%;
 }
 
+.footer__subscribe .stay__form {
+  margin: 0;
+  margin-top: 30px !important;
+}
 .footer__subscribe .stay__form .stay__input {
   width: 327px;
   height: 54px;
@@ -1321,4 +1349,141 @@ body {
 .footer__subscribe .stay__form .stay__button {
   width: 164px;
   height: 54px;
+}
+
+@media (max-width: 760px) {
+  .footer {
+    margin-top: 93px;
+    margin-bottom: 50px;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+  .footer__contacts {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo {
+    width: 365px;
+  }
+  .footer__logo img {
+    width: 234px;
+  }
+  .footer__about {
+    width: 365px;
+  }
+  .footer__mail {
+    margin-top: 40px;
+    margin-left: -80px;
+  }
+  .footer__social {
+    margin-top: 38px;
+  }
+  .footer-social {
+    width: 101%;
+    margin-left: -18px;
+  }
+  .footer-social__item {
+    width: 74px;
+    height: 74px;
+  }
+  .footer-menu {
+    flex: none;
+    margin-top: 40px;
+    padding: 0 90px;
+  }
+  .footer-menu__left {
+    gap: 32px;
+  }
+  .footer-menu__right {
+    align-items: end;
+    gap: 32px;
+  }
+  .footer__subscribe {
+    margin-top: 14px;
+    margin-left: -33px;
+  }
+  .footer__subscribe .stay__form {
+    margin-top: 13px !important;
+  }
+  .footer__subscribe .stay__form .stay__input {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .footer-menu {
+    padding: 0;
+    margin: 0 auto;
+    gap: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .footer {
+    margin-top: 97px;
+  }
+  .footer__container {
+    padding: 0;
+  }
+  .footer__logo {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__logo img {
+    margin-left: 16px;
+    width: 173px;
+  }
+  .footer__about {
+    margin-top: 20px;
+    margin-left: 42px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 248px;
+  }
+  .footer__mail {
+    margin-top: 28px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .footer-social {
+    width: 86%;
+    margin: 0;
+    margin-top: 67px;
+  }
+  .footer-social__item {
+    height: 35px;
+    width: 35px;
+  }
+  .footer-menu {
+    margin: 0;
+    margin-left: 24px;
+    margin-right: 21px;
+    margin-top: 44px;
+  }
+  .footer__subscribe {
+    margin: 0;
+    margin-top: 40px;
+  }
+  .footer__subscribe .subscribe__header {
+    margin-left: 23px;
+  }
+  .footer__subscribe .stay__form .stay__input {
+    margin-left: 5px;
+    width: 173px;
+    height: 47px;
+    font-size: 11px;
+    font-weight: 400;
+  }
+  .footer__subscribe .stay__form .stay__input::-moz-placeholder {
+    font-size: 11px;
+  }
+  .footer__subscribe .stay__form .stay__input::placeholder {
+    font-size: 11px;
+  }
+  .footer__subscribe .stay__form .stay__button {
+    width: 133px;
+    height: 47px;
+  }
 }/*# sourceMappingURL=style.css.map */
