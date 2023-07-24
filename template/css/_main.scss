@@ -463,9 +463,9 @@
         justify-content: center;
     }
 
-    &__header{
+    // &__header{
 
-    }
+    // }
 
     &__text {
         margin-top: 15px;
@@ -511,9 +511,9 @@
             margin-top: 32px;
         }
 
-        &__button {
+        // &__button {
 
-        }
+        // }
     }
 }
 
@@ -795,8 +795,8 @@
 .about {
     margin-top: 138px;
 
-    &__container {
-    }
+    // &__container {
+    // }
 
     &__items {
         display: flex;
@@ -942,9 +942,9 @@
         padding-top: 10px;
         padding-bottom: 0;
 
-        &__button {
+        // &__button {
 
-        }
+        // }
     }
 
     .about-pag {
@@ -1076,8 +1076,8 @@
 .feedback {
     margin-top: 145px;
 
-    &__container {
-    }
+    // &__container {
+    // }
 
     &__top {
         display: flex;
@@ -1094,8 +1094,8 @@
         letter-spacing: 0.4px;
     }
 
-    &__button {
-    }
+    // &__button {
+    // }
 
     &__items {
         display: flex;
@@ -1370,8 +1370,9 @@
         }
 
         &__text {
-            letter-spacing: 0;
+            letter-spacing: -0.4px;
             padding-left: 20px;
+            padding-right: 20px;
             margin-top: 32px;
             width: auto;
             //max-width: 600px;
@@ -1379,6 +1380,58 @@
 
         &__form {
             margin-top: 30px;
+            margin-left: 43px;
+        }
+    }
+}
+
+
+@media (max-width: 690px) {
+    .stay {
+        &__form {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 380px) {
+    .stay {
+        margin-top: 28px;
+
+        &__header {
+            margin-left: -5px;
+        }
+
+        &__text {
+            margin-top: 9px;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 0.2px;
+            padding: 0;
+            padding-left: 6px;
+        }
+
+        &__form {
+            margin: 0;
+            margin-top: 74px;
+        }
+
+        &__input {
+            width: 226px;
+            height: 50px;
+            font-size: 14px;
+
+            &::placeholder {
+                font-size: 14px;
+            }
+        }
+
+        &__button {
+            width: 70px;
+            height: 50px;
+            font-size: 8px;
         }
     }
 }
