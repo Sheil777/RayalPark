@@ -790,3 +790,162 @@
     }
 }
 
+/* About */
+
+.about {
+    margin-top: 138px;
+
+    &__container {
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__item {
+        width: 555px;
+        height: 337px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.about-main {
+
+    &__header {
+        margin-top: 48px;
+        color: #081F32;
+
+        font-family: Gelasio;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 140%;
+        letter-spacing: 0.35px;
+    }
+
+    &__text {
+        margin-top: 25px;
+        color: #081F32;
+        width: 450px;
+
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%; 
+    }
+
+    &__button {
+        margin-top: 30px;
+    }
+}
+
+.about-caption {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 231px;
+    height: 126px;
+    border-radius: 10px;
+    background: rgba(226, 226, 226, 0.40);
+    backdrop-filter: blur(5px);
+    padding: 24px 28px 25px 27px;
+    box-sizing: border-box;
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        color: #081F32;
+        font-size: 18px;
+        font-family: Gelasio;
+        font-weight: 500;
+        line-height: 150%; 
+    }
+
+    &__right {
+        color: #081F32;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 160%; /* 22.4px */
+
+        span {
+            opacity: 0.800000011920929;
+            color: #081F32;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 160%;
+        }
+    }
+
+    &__button {
+        margin-top: 10px;
+    }
+
+    &__button a {
+        width: 105px;
+        height: 41px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 1170px) {
+    .about {
+        &__items {
+            //justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            //flex-wrap: nowrap;
+        }
+    }
+}
+
+
+@media (max-width: 760px) {
+    .about {
+        margin-top: 189px;
+
+        &__items {
+            gap: 0;
+            width: 200%;
+            height: 1450px;
+            overflow: hidden;
+        }
+    }
+
+    .about-caption {
+        padding-top: 10px;
+        padding-bottom: 0;
+
+        &__button {
+
+        }
+    }
+}
