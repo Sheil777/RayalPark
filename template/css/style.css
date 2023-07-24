@@ -834,6 +834,20 @@ body {
   }
 }
 @media (max-width: 320px) {
+  .about {
+    margin-top: 39px;
+  }
+  .about__items {
+    width: auto;
+    height: 1012px;
+  }
+  .about__item {
+    width: 87vw;
+    height: 52vw;
+  }
+  .about-main {
+    height: auto;
+  }
   .about-main__header {
     color: #081F32;
     font-family: Gelasio;
@@ -841,6 +855,7 @@ body {
     font-weight: 500;
     line-height: 140%;
     width: 120px;
+    margin-top: 0;
   }
   .about-main__text {
     color: #081F32;
@@ -848,5 +863,56 @@ body {
     font-size: 9px;
     font-weight: 400;
     line-height: 160%;
+    margin-top: 20px;
+    width: 210px;
+  }
+  .about-main__button {
+    margin-top: 22px;
+  }
+  .about-caption {
+    height: 19.5vw;
+    width: 36vw;
+    padding: 0 7px;
+  }
+  .about-caption__text {
+    display: block;
+  }
+  .about-caption__left {
+    display: inline-block;
+    font-size: 3vw;
+    width: 12vw;
+    margin-right: 3vw;
+  }
+  .about-caption__right {
+    display: inline-block;
+    font-size: 2.5vw;
+    width: 8vw;
+  }
+  .about-caption__right span {
+    font-size: 2vw;
+  }
+  .about-caption__button {
+    margin-top: 1.8vw;
+    margin-left: -1.1vw;
+  }
+  .about-caption__button a {
+    height: 8vw;
+    width: 20vw;
+    font-size: 3vw;
+    letter-spacing: 0.17vw;
+  }
+  .about-pag {
+    margin-top: 45px;
+    padding-right: 11px;
+    width: 160px;
+  }
+  .about-pag__item {
+    height: 18px;
+    width: 18px;
+  }
+  .about-pag__item.active {
+    margin-top: 2px;
+    width: 60px;
+    height: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
