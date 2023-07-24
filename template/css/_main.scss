@@ -861,8 +861,6 @@
 }
 
 .about-caption {
-    display: none;
-
     position: absolute;
     left: 0;
     bottom: 0;
@@ -946,6 +944,51 @@
 
         &__button {
 
+        }
+    }
+
+    .about-pag {
+        width: 318px;
+        margin: 0 auto;
+        margin-top: 140px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 59px;
+
+        &__item {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            background-color: #999;
+
+            &.active {
+                border-radius: 5px;
+                width: 120px;
+                height: 30px;
+                background-color: #3D3D3F;
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .about-main {
+        &__header {
+            color: #081F32;
+            font-family: Gelasio;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 140%; 
+            width: 120px;
+        }
+
+        &__text {
+            color: #081F32;
+            font-family: Roboto;
+            font-size: 9px;
+            font-weight: 400;
+            line-height: 160%; 
         }
     }
 }
