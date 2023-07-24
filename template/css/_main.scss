@@ -756,13 +756,18 @@
         &__items {
             flex-direction: column;
             align-items: center;
+            margin-top: 25px;
+            min-height: 651px;
+        }
+
+        &__item {
+            margin-top: 0;
         }
     }
 
     .why-item {
         width: 132px;
         height: 129px;
-        margin-top: 26px;
 
         &__img {
             width: 49px;
@@ -784,3 +789,4 @@
         }
     }
 }
+
