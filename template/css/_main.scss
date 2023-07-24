@@ -1225,7 +1225,6 @@
 }
 
 @media (max-width: 390px) {
-
     .feedback {
         margin-top: 67px;
 
@@ -1286,6 +1285,100 @@
             margin-top: -2px;
             font-size: 7px;
             font-weight: 400;
+        }
+    }
+}
+
+/* Stay */
+
+.stay {
+    margin-top: 139px;
+
+    &__header {
+        color: #081F32;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 150%; 
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 0.800000011920929;
+        text-align: center;
+    }
+
+    &__text {
+        margin-top: 22px;
+        color: #081F32;
+        text-align: center;
+        font-family: Gelasio;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; 
+        letter-spacing: 0.3px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        margin-top: 49px;
+    }
+
+    &__input {
+        padding-left: 28px;
+        box-sizing: border-box;
+        width: 402px;
+        height: 54px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        font-size: 16px;
+
+        &::placeholder {
+            color: #081F32;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            opacity: 0.5;
+        }
+    }
+
+    &__button {
+        width: 164px;
+        height: 54px;
+        border-radius: 5px;
+        background: #1B75BB;
+
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+        letter-spacing: 0.48px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .stay {
+        margin-top: 42px;
+
+        &__container {
+            padding: 0;
+        }
+
+        &__text {
+            letter-spacing: 0;
+            padding-left: 20px;
+            margin-top: 32px;
+            width: auto;
+            //max-width: 600px;
+        }
+
+        &__form {
+            margin-top: 30px;
         }
     }
 }
