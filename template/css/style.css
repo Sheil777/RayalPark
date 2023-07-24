@@ -412,6 +412,21 @@ body {
     margin-top: 10px;
   }
 }
+@media (max-width: 680px) {
+  .main-footer__wrapper {
+    padding: 0 15px;
+  }
+  .main-footer__button a {
+    width: 109px;
+    height: 50px;
+  }
+  .main-footer__block {
+    margin-right: 15px;
+  }
+  .main-footer__header, .main-footer__text {
+    font-size: 14px;
+  }
+}
 @media (max-width: 320px) {
   .main-footer__wrapper {
     margin-top: 145px;
