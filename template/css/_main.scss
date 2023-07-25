@@ -741,7 +741,7 @@
         &__text {
             margin-top: 30px;
             padding-left: 27px;
-            width: 540px;
+            max-width: 540px;
         }
 
         &__items {
@@ -1656,8 +1656,17 @@
     }   
 }
 
+@media (max-width: 1070px) {
+    .footer__subscribe {
+        .stay__form {
+            .stay__input {
+                width: 246px;
+            }
+        }
+    }
+}
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
     .footer {
         margin-top: 93px;
 
