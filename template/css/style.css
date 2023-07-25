@@ -427,34 +427,43 @@ body {
     font-size: 14px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 500px) {
   .main-footer__wrapper {
     margin-top: 145px;
     margin-left: 12px;
     width: 83.5vw;
-    height: 40px;
+    height: 12.5vw;
     padding: 0;
   }
   .main-footer__header {
+    font-size: 2.3vw;
     margin-bottom: 3px;
   }
-  .main-footer__header, .main-footer__text {
-    font-size: 7px;
+  .main-footer__text {
+    font-size: 2.3vw;
+    margin-bottom: 3px;
   }
   .main-footer__items {
-    flex: 0 1 191px;
+    flex: none;
+    width: auto;
+  }
+  .main-footer__item {
+    width: 21.8vw;
+  }
+  .main-footer__item:nth-child(2) .main-footer__block {
+    margin-right: 5vw;
   }
   .main-footer__block {
-    margin-right: 8px;
+    margin-right: 1.3vw;
   }
   .main-footer__button {
     margin-bottom: 0;
     margin-right: 10px;
   }
   .main-footer__button a {
-    width: 41.659px;
-    height: 20.364px;
-    font-size: 6px;
+    width: 13vw;
+    height: 6vw;
+    font-size: 2vw;
   }
 }
 /* Dream */
