@@ -1466,6 +1466,17 @@ body {
     gap: 25px;
   }
 }
+@media (max-width: 420px) {
+  .footer__subscribe .stay__form .stay__input {
+    font-size: 3vw;
+  }
+  .footer__subscribe .stay__form .stay__input::-moz-placeholder {
+    font-size: 3vw;
+  }
+  .footer__subscribe .stay__form .stay__input::placeholder {
+    font-size: 3vw;
+  }
+}
 @media (max-width: 320px) {
   .footer {
     margin-top: 97px;
